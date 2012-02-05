@@ -259,7 +259,7 @@
 	CGFloat diameter = (indicatorDiameter > 0) ? indicatorDiameter : kDotDiameter ;
 	CGFloat space = (indicatorSpace > 0) ? indicatorSpace : kDotSpace ;
 	
-	return CGSizeMake(pageCount * diameter + (pageCount - 1) * space + 44.0f, MAX(44.0f, diameter + 4.0f)) ;
+	return CGSizeMake(pageCount * diameter + (pageCount - 1) * space + 44.0f, MIN(44.0f, diameter + 4.0f)) ;
 }
 
 
