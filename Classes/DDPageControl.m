@@ -133,6 +133,8 @@
 
 - (void)setCurrentPage:(NSInteger)pageNumber
 {
+  NSAssert2(pageNumber < numberOfPages, @"Page %d > [%d]", pageNumber, numberOfPages);
+  
 	// no need to update in that case
 	if (currentPage == pageNumber)
 		return ;
